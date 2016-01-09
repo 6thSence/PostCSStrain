@@ -1,16 +1,12 @@
 var gulp = require('gulp');
 var postcss =require('gulp-postcss');
-var csswring = require('csswring');
-var cssnext = require('cssnext');
-var precss = require('precss');
 var autoprefixer = require('autoprefixer-core');
+var lost = require('lost');
 
 gulp.task('styles', function() {
   var processors = [
-    // csswring,
-    precss({}),
-    autoprefixer({browsers:['last 2 version']}),
-    cssnext({})
+    lost,
+    autoprefixer({browsers:['last 2 version']})
   ];
   return gulp.src('styles.css')
     .pipe(postcss(processors))

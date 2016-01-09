@@ -1,24 +1,11 @@
-:root {
-  --mainColor: red;
-}
-
-$primaty: green;
-
-@define-mixin hello {
-	margin: 0 auto;
-}
 
 .button {
 	display: flex;
 	border-radius: 50%;
 	transform: translateX(10px);
-	background: var(--mainColor);
-	color: color(red alpha(-10%));
-	h1 {
-		color: $primaty;
-	}
+}
 
-	section {
-		@mixin hello;
-	}
+
+div {
+	lost-column: 1/3;
 }
