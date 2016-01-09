@@ -6,11 +6,6 @@ body {
 	transform: translateX(10px);
 }
 
-.nested-grid-item {
-	background: red;
-	height: 50px;
-	margin-bottom: 10px;
-}
 
 .grid-item {
 	background: #2c3e50;
@@ -18,16 +13,34 @@ body {
 	margin-bottom: 20px;
 }
 
+.nested-grid-item {
+	background: red;
+	height: 50px;
+	margin-bottom: 10px;
+}
 .grid-one {	
 	width: 100%;
 	lost-utility: clearfix;
 }
 
 .grid-one div {
-	lost-column: 1/4 0;
+	lost-column: 1/1;
 }
 
-.grid-one div:nth-child(2) {
-	lost-column: 1/2 0;
+@media screen and (min-width: 400px) {
+	.grid-one div {
+		lost-column: 1/2 2;
+	}
 }
 
+@media screen and (min-width: 900px) {
+	.grid-one div {
+		lost-column: 1/3 3;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.grid-one div {
+		lost-column: 1/4 4 50px;
+	}
+}
