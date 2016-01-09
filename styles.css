@@ -12,12 +12,16 @@
 	margin-bottom: 10px;
 }
 .grid-one {	
-	width: 100%;
-	lost-utility: clearfix;
+	lost-center: 80% 40px;
 }
 
 .grid-one div {
 	lost-column: 1/1;
+	lost-align: center;
+}
+.grid-one div p{
+	margin: 0;
+	color: #fff;
 }
 
 @media screen and (min-width: 400px) {
@@ -48,3 +52,4 @@
 .grid-two div {
 	lost-row: 1/5;
 }
+
