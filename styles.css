@@ -13,11 +13,14 @@
 }
 .grid-one {	
 	lost-center: 80% 40px;
+	height: 100vh;
 }
 
 .grid-one div {
+	color: #fff;
 	lost-column: 1/1;
 	lost-align: center;
+	font-size: 2em;
 }
 .grid-one div p{
 	margin: 0;
@@ -38,18 +41,12 @@
 
 @media screen and (min-width: 1300px) {
 	.grid-one div {
-		lost-column: 1/4 4 50px;
+		lost-column: 1/4 4 30px;
 	}
 }
 
-
-.grid-two {	
-	width: 100%;
-	lost-utility: clearfix;
-	height: 500px;
+.grid-one div:first-child {
+	lost-offset: -1/4;
 }
 
-.grid-two div {
-	lost-row: 1/5;
-}
 
