@@ -3,5 +3,16 @@
 	display: -ms-flexbox;
 	display: -webkit-box;
 	display: flex;
+	border-radius: 50%;
+	-webkit-transform: translateX(10px);
+	        transform: translateX(10px);
 	background: red;
+	color: #FF0000;
+	color: rgba(255, 0, 0, 0.9);
+}
+.button h1 {
+	color: green;
+}
+.button section {
+	margin: 0 auto;
 }
