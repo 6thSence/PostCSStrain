@@ -1,12 +1,5 @@
 
 
-body {
-	display: flex;
-	border-radius: 50%;
-	transform: translateX(10px);
-}
-
-
 .grid-item {
 	background: #2c3e50;
 	height: 100px;
@@ -43,4 +36,15 @@ body {
 	.grid-one div {
 		lost-column: 1/4 4 50px;
 	}
+}
+
+
+.grid-two {	
+	width: 100%;
+	lost-utility: clearfix;
+	height: 500px;
+}
+
+.grid-two div {
+	lost-row: 1/5;
 }
