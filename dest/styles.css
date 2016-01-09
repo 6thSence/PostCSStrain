@@ -1,1 +1,7 @@
-.button{display:-webkit-flex;display:-ms-flexbox;display:flex;background:blue}
+.button {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	background: red;
+}
